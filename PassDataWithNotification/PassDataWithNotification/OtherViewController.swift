@@ -25,7 +25,7 @@ class OtherViewController: UIViewController {
     // bắn dữ liệu
     @IBAction func passData(_ sender: UIBarButtonItem) {
         
-        let dict = ["name": nameTextField.text]
+        let dict = ["name": nameTextField.text!]
         
         // phát sóng notification thông qua key 'Notification'
         NotificationCenter.default.post(name: NSNotification.Name.init("Notification"), object: nil, userInfo: dict)
